@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luxury Estates</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="luxury">
+  <header class="site-header glass">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="crest">🦁</div>
+        <div class="brand-text">
+          <span class="brand-name">Luxury Estates</span>
+          <small class="tag">Premium Residences</small>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="listings.html" class="nav-link">Properties</a>
+        <a href="details.html" class="nav-link">Details</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <button id="themeToggle" class="icon-btn" title="Toggle theme">🌗</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO (full viewport) -->
+    <section id="hero" class="hero reveal" data-parallax>
+      <div class="hero-inner">
+        <h1 class="hero-title">Live Where Luxury Meets Comfort</h1>
+        <p class="hero-sub">Curated premium residences — exclusive locations, exquisite design.</p>
+        <div class="hero-cta">
+          <a class="btn btn-gold" href="listings.html">Explore Properties</a>
+          <a class="btn btn-outline" href="#featured">Our Picks</a>
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Featured properties -->
+    <section id="featured" class="section container reveal">
+      <h2 class="section-title">Featured Collections</h2>
+      <div id="featuredGrid" class="grid grid-cards"></div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section stats reveal">
+      <div class="container stats-grid">
+        <div class="stat">
+          <div class="stat-num" data-target="128">0</div>
+          <div class="stat-label">Properties</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-target="23">0</div>
+          <div class="stat-label">Premium Locations</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-target="12">0</div>
+          <div class="stat-label">Awards</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section class="section container reveal">
+      <h2 class="section-title">Why Luxury Estates</h2>
+      <div class="why-grid">
+        <article class="why-card">
+          <h3>Curated Design</h3>
+          <p>Every residence is designed by top architects with premium finishes.</p>
+        </article>
+        <article class="why-card">
+          <h3>Concierge Services</h3>
+          <p>Personalized services to ensure effortless living.</p>
+        </article>
+        <article class="why-card">
+          <h3>Exclusive Locations</h3>
+          <p>Prime neighborhoods with privacy and connectivity.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating feedback widget -->
+  <button id="feedbackBtn" class="feedback-btn" aria-label="Feedback">✉️</button>
+  <div id="feedbackModal" class="feedback-modal" aria-hidden="true">
+    <form id="feedbackForm" class="feedback-form">
+      <h3>Send Feedback</h3>
+      <input id="f-name" type="text" placeholder="Your name" required />
+      <input id="f-email" type="email" placeholder="Email" required />
+      <textarea id="f-msg" rows="4" placeholder="Message" required></textarea>
+      <div class="feedback-actions">
+        <button type="submit" class="btn btn-gold">Send</button>
+        <button type="button" id="feedbackClose" class="btn btn-outline">Close</button>
+      </div>
+      <p id="feedbackStatus" class="status"></p>
+    </form>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>Luxury Estates</strong> — Exceptional living.
+      </div>
+      <div class="footer-right">© 2025 Luxury Estates</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
